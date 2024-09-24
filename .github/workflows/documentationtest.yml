@@ -5,3 +5,4 @@ jobs:
     uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
     with:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    secrets: inherit
