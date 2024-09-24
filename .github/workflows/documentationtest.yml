@@ -1,4 +1,4 @@
-name: documentation
+name: documentationtest
 
 on:
   workflow_call:
