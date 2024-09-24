@@ -1,9 +1,10 @@
 name: documentationtest
 
 on:
-  workflow_dispatch:
+  workflow_call:
   
 jobs:
   call-sphinx-builder:
     uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
+    secrets: inherit
 
