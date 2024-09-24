@@ -1,13 +1,5 @@
 name: documentationtest
-on:
-  workflow_call:
-      inputs:
-        config-path:
-          required: true
-          type: string
-      secrets:
-        token:
-          required: true
+on: [push, pull_request, workflow_dispatch]
 jobs:
   call_sphinx_builder:
     runs-on: ubuntu-latest
