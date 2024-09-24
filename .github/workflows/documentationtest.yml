@@ -6,3 +6,4 @@ on:
 jobs:
   call-sphinx-builder:
     uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
+
