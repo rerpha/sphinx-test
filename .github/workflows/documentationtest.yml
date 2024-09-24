@@ -2,8 +2,6 @@ name: documentationtest
 on: [push, pull_request, workflow_dispatch]
 jobs:
   call_sphinx_builder:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
+    uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
