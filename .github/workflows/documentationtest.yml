@@ -1,9 +1,9 @@
 name: documentationtest
 on: 
   workflow_call:
-      secrets:
-        token:
-          required: true
+    secrets:
+      token:
+        required: true
 jobs:
   call_sphinx_builder:
     uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
