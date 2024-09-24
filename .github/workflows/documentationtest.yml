@@ -10,6 +10,8 @@ on:
           required: true
 jobs:
   call_sphinx_builder:
-    uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
-    secrets: 
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
