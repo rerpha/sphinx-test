@@ -8,6 +8,6 @@ on:
 jobs:
   call_sphinx_builder:
     uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
-    with:
+    secrets:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
