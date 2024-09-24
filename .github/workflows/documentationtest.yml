@@ -1,5 +1,5 @@
 name: documentationtest
-on: [workflow_call, push]
+on: [workflow_call]
 jobs:
   call_sphinx_builder:
     uses: rerpha/reusable-workflows/.github/workflows/documentation.yml@main
