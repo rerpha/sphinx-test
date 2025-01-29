@@ -2,7 +2,7 @@ name: documentationtest
 on: [push, workflow_call]
 jobs:
   call_sphinx_builder:
-    uses: ISISComputingGroup/reusable-workflows/.github/workflows/documentation.yml@main
+    uses: ISISComputingGroup/reusable-workflows/.github/workflows/documentation.yml@rerpha-patch-2
     secrets: inherit
     with:
       deploy-branch: "master"
